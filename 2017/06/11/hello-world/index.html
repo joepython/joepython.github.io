@@ -398,11 +398,20 @@
 
 
     
-        <section class="youyan" id="comments">
-  <div id="uyan_frame"></div>
-  <script src="http://v2.uyan.cc/code/uyan.js?uid=2136131"></script>
-</section>
-
+        <div id="gitments"></div>
+<script src="/js/gitment.browser.js"></script>
+<script>
+    var gitment = new Gitment({
+      id: window.location.pathname,
+      owner: 'joepython',
+      repo: 'joepython.github.io',
+      oauth: {
+        client_id: '1e53654008fed41c3c52',
+        client_secret: '04b6a8a51e4d067464f2ecdde784ea3c9f35ed16',
+      },
+    })
+    gitment.render('gitments')
+</script>
     
 
 
