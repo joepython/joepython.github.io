@@ -26,5 +26,13 @@ source /usr/local/bin/virtualenvwrapper.sh
 ```
 source ~/.bash_profile
 mkvirtualenv test
+workon test
+deactivate
+rmvirtualenv
 
 ```
+
+虚拟环境路径
+![虚拟环境路径](/img/virtualpath.png)
+
+python3 manage.py shell 练习 
